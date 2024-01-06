@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting and Database Fetch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Techniques</h1>
+        <form action="/sort" method="POST">
+            <label for="choice">Select a sorting technique:</label>
+            <select name="choice" id="choice">
+                <option value="1">Quick Sort</option>
+                <option value="2">Randomized Quick Sort</option>
+            </select>
+            <button type="submit">Sort</button>
+        </form>
+        <hr>
+        <h1>Database Operations</h1>
+        <a href="/fetch" class="btn">Fetch Register Numbers</a>
+    </div>
+</body>
+</html>
